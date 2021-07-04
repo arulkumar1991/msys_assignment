@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "aeed9bb1-8c84-45fc-baca-2d5ffca362ed",
+		"name": "Msys Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Delete Service Request",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44310/api/ServiceRequest/0921a15b-c33d-443d-a21e-c58f81fc9a96",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"ServiceRequest",
+						"0921a15b-c33d-443d-a21e-c58f81fc9a96"
+					]
+				},
+				"description": "Delete Request"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Service Request",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"0921a15b-c33d-443d-a21e-c58f81fc9a96\",\r\n    \"buildingCode\": \"COHE\",\r\n    \"description\": \"\\\"Please Test updated\",\r\n    \"createdBy\": \"Jayalalithaa Test\",\r\n    \"createdDate\": \"2019-08-01T14:25:43.511Z\",\r\n    \"lastModifiedBy\": \"M. Stalin Test\",\r\n    \"lastModifiedDate\": \"2019-08-01T15:01:23.511Z\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/ServiceRequest/0921a15b-c33d-443d-a21e-c58f81fc9a96",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"ServiceRequest",
+						"0921a15b-c33d-443d-a21e-c58f81fc9a96"
+					]
+				},
+				"description": "Update Service Request API"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Service Request",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"0921a15b-c33d-443d-a21e-c58f81fc9a96\",\r\n    \"buildingCode\": \"COHE\",\r\n    \"description\": \"\\\"Please Test\",\r\n    \"createdBy\": \"Jayalalithaa Test\",\r\n    \"createdDate\": \"2019-08-01T14:25:43.511Z\",\r\n    \"lastModifiedBy\": \"M. Stalin Test\",\r\n    \"lastModifiedDate\": \"2019-08-01T15:01:23.511Z\"\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44310/api/ServiceRequest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"ServiceRequest"
+					]
+				},
+				"description": "Create Service Request API"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Service Request by Id",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44310/api/ServiceRequest/165d244e-f63e-45a6-9c8b-8bca8cb6b9e3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"ServiceRequest",
+						"165d244e-f63e-45a6-9c8b-8bca8cb6b9e3"
+					]
+				},
+				"description": "Get Service Request by Id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Service Requests",
+			"protocolProfileBehavior": {
+				"strictSSL": false
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44310/api/ServiceRequest",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44310",
+					"path": [
+						"api",
+						"ServiceRequest"
+					]
+				},
+				"description": "Get Service Requests API"
+			},
+			"response": []
+		}
+	]
+}
